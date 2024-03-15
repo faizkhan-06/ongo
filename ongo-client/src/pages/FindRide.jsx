@@ -69,7 +69,16 @@ const ShareRide = () => {
                     <SelectContent>
                       <SelectGroup>
                         <SelectLabel>Start Location</SelectLabel>
-                        <SelectItem value="apple">Apple</SelectItem>
+                        <SelectItem value="tarsali">tarsali</SelectItem>
+                        <SelectItem value="tandalja">tandalja</SelectItem>
+                        <SelectItem value="tandalja">tandalja</SelectItem>
+                        <SelectItem value="manjalpur">manjalpur</SelectItem>
+                        <SelectItem value="waghodia">waghodia</SelectItem>
+                        <SelectItem value="waghodia">waghodia</SelectItem>
+                        <SelectItem value="fatehgunj">fatehgunj</SelectItem>
+                        <SelectItem value="vadodara_airport">
+                          vadodara_airport
+                        </SelectItem>
                       </SelectGroup>
                     </SelectContent>
                   </Select>
@@ -88,7 +97,16 @@ const ShareRide = () => {
                     <SelectContent>
                       <SelectGroup>
                         <SelectLabel>End Location</SelectLabel>
-                        <SelectItem value="apple">Apple</SelectItem>
+                        <SelectItem value="tarsali">tarsali</SelectItem>
+                        <SelectItem value="tandalja">tandalja</SelectItem>
+                        <SelectItem value="tandalja">tandalja</SelectItem>
+                        <SelectItem value="manjalpur">manjalpur</SelectItem>
+                        <SelectItem value="waghodia">waghodia</SelectItem>
+                        <SelectItem value="waghodia">waghodia</SelectItem>
+                        <SelectItem value="fatehgunj">fatehgunj</SelectItem>
+                        <SelectItem value="vadodara_airport">
+                          vadodara_airport
+                        </SelectItem>
                       </SelectGroup>
                     </SelectContent>
                   </Select>

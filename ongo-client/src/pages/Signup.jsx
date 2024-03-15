@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Signup = () => {
   return (
     <>
@@ -33,7 +34,8 @@ const Signup = () => {
               </button>
             </div>
             <span className=" text-sm text-gray-400">
-              If you already have an account, please log in.
+              If you already have an account, please{" "}
+              <Link to={"/sign-in"}>log in</Link>.
             </span>
           </div>
         </form>

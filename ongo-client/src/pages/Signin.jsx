@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Signin = () => {
   return (
     <>
@@ -33,7 +35,7 @@ const Signin = () => {
               </button>
             </div>
             <span className=" text-sm text-gray-400">
-              If you don't have an account yet, please sign up here.
+              If you don't have an account yet, please <Link to={/sign-up}>sign up</Link> here.
             </span>
           </div>
         </form>

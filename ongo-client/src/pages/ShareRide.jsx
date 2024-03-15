@@ -2,7 +2,6 @@ import NavBar from "@/components/nav/Navbar";
 import { useState } from "react";
 import { DatePicker } from "@/components/ui/DatePicker";
 import { FaAddressCard } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineDateRange } from "react-icons/md";
 import { IoTimerOutline } from "react-icons/io5";
 import { LiaTruckPickupSolid } from "react-icons/lia";
@@ -83,7 +82,16 @@ const ShareRide = () => {
                     <SelectContent>
                       <SelectGroup>
                         <SelectLabel>Start Location</SelectLabel>
-                        <SelectItem value="apple">Apple</SelectItem>
+                        <SelectItem value="tarsali">tarsali</SelectItem>
+                        <SelectItem value="tandalja">tandalja</SelectItem>
+                        <SelectItem value="tandalja">tandalja</SelectItem>
+                        <SelectItem value="manjalpur">manjalpur</SelectItem>
+                        <SelectItem value="waghodia">waghodia</SelectItem>
+                        <SelectItem value="waghodia">waghodia</SelectItem>
+                        <SelectItem value="fatehgunj">fatehgunj</SelectItem>
+                        <SelectItem value="vadodara_airport">
+                          vadodara_airport
+                        </SelectItem>
                       </SelectGroup>
                     </SelectContent>
                   </Select>
@@ -102,7 +110,16 @@ const ShareRide = () => {
                     <SelectContent>
                       <SelectGroup>
                         <SelectLabel>End Location</SelectLabel>
-                        <SelectItem value="apple">Apple</SelectItem>
+                        <SelectItem value="tarsali">tarsali</SelectItem>
+                        <SelectItem value="tandalja">tandalja</SelectItem>
+                        <SelectItem value="tandalja">tandalja</SelectItem>
+                        <SelectItem value="manjalpur">manjalpur</SelectItem>
+                        <SelectItem value="waghodia">waghodia</SelectItem>
+                        <SelectItem value="waghodia">waghodia</SelectItem>
+                        <SelectItem value="fatehgunj">fatehgunj</SelectItem>
+                        <SelectItem value="vadodara_airport">
+                          vadodara_airport
+                        </SelectItem>
                       </SelectGroup>
                     </SelectContent>
                   </Select>
