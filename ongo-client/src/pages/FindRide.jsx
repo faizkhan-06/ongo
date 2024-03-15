@@ -1,15 +1,10 @@
 import NavBar from "@/components/nav/Navbar";
-import { useState } from "react";
 import { DatePicker } from "@/components/ui/DatePicker";
 import { FaAddressCard } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineDateRange } from "react-icons/md";
 import { IoTimerOutline } from "react-icons/io5";
 import { LiaTruckPickupSolid } from "react-icons/lia";
 import { PiArmchair } from "react-icons/pi";
-import { FaCar } from "react-icons/fa";
-import { CiMoneyCheck1 } from "react-icons/ci";
-import { IoCashOutline } from "react-icons/io5";
 
 import {
   Select,
@@ -21,8 +16,6 @@ import {
   SelectValue,
 } from "../components/ui/select";
 import { TimeBox } from "@/components/ui/TimeBox";
-import { PriceInp } from "@/components/ui/PriceInp";
-import { LicenceNum } from "@/components/ui/LicenceNum";
 
 const ShareRide = () => {
   return (
@@ -33,7 +26,7 @@ const ShareRide = () => {
           <div className=" flex items-center text-slate-50 mx-16 my-6">
             <h1 className=" flex gap-4 text-2xl">
               <FaAddressCard className=" text-slate-300 text-3xl" />
-              Share Ride
+              Find Ride
             </h1>
           </div>
           <div className=" text-slate-50">
@@ -62,13 +55,6 @@ const ShareRide = () => {
               readOnly
             /> */}
                 <TimeBox />
-              </div>
-              <div className="ml-7 mr-3 my-5">
-                <label className="mr-7">
-                  <CiMoneyCheck1 className=" inline-block mx-2 text" />
-                  Licence No.{""}
-                </label>
-                <LicenceNum />
               </div>
               <div className="mx-7 my-5">
                 <label className="mr-7">
@@ -130,53 +116,7 @@ const ShareRide = () => {
                   </Select>
                 </div>
               </div>
-              <div className="mx-7 my-5">
-                <label className="mr-7">
-                  <FaCar className=" inline-block mx-2 text" />
-                  Vehicle{" "}
-                </label>
-                <div className=" inline-block">
-                  <Select>
-                    <SelectTrigger className="w-[180px]">
-                      <SelectValue placeholder="Vehicle" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectGroup>
-                        <SelectLabel>Type of vehicle</SelectLabel>
-                        <SelectItem value="1">Bike</SelectItem>
-                        <SelectItem value="2">Car</SelectItem>
-                      </SelectGroup>
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
-              <div className="mx-7 my-5">
-                <label className="mr-7">
-                  <CiMoneyCheck1 className=" inline-block mx-2 text" />
-                  Amount{" "}
-                </label>
-                <PriceInp />
-              </div>
-              <div className="mx-7 my-5">
-                <label className="mr-7">
-                  <IoCashOutline className=" inline-block mx-2 text" />
-                  paymet{" "}
-                </label>
-                <div className=" inline-block">
-                  <Select>
-                    <SelectTrigger className="w-[180px]">
-                      <SelectValue placeholder="Payment methods" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectGroup>
-                        <SelectLabel>Payment methods</SelectLabel>
-                        <SelectItem value="cash">Cash</SelectItem>
-                        <SelectItem value="upi">UPI</SelectItem>
-                      </SelectGroup>
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
+
               <button
                 type="submit"
                 className="m-1 px-3 py-2 mb-4 rounded-lg bg-slate-600 text-black hover:bg-slate-800 hover:border-[1px] hover:border-slate-500 hover:text-white mx-7"

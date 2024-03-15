@@ -1,4 +1,5 @@
 import NavBar from "@/components/nav/Navbar";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className=" h-full bg-gradient-to-b from-gray-950 to-zinc-800">
+      <section className=" h-[800px] bg-gradient-to-b from-gray-950 to-zinc-800">
         <div className=" flex flex-col m-7">
           <span className=" text-slate-200 my-5 max-w-86 text-xl mx-auto">
             Tired of waiting for unreliable taxis or crowded buses?
@@ -44,8 +45,13 @@ const Home = () => {
               <span className=" inline-block text-3xl mb-4">Find ride</span>
               <span className=" w-[30vw] flex justify-center items-center leading-7 text-slate-400">
                 Enter your departure location, destination, and travel dates to
-                view a list of available rides along your route.
+                view a list of available rides along your route.
               </span>
+              <Link to={"/find-ride"}>
+                <button className=" bg-gradient-to-r from-purple-700 via-blue-700 to-pink-700 py-3 px-5 mr-3 rounded-2xl text-slate-300 text-sm mt-3">
+                  click here
+                </button>
+              </Link>
             </div>
           </div>
           <div className=" flex gap-16 mx-28 my-10">
@@ -60,8 +66,13 @@ const Home = () => {
               <span className=" inline-block text-3xl mb-4">Share ride</span>
               <span className=" w-[30vw] flex justify-center items-center leading-7 text-slate-400">
                 Share details about your trip including the date, time, starting
-                point, destination, and any preferences you may have.
+                point, destination, and any preferences you may have.
               </span>
+              <Link to={"/share-ride"}>
+                <button className=" bg-gradient-to-r from-purple-700 via-blue-700 to-pink-700 py-3 px-5 mr-3 rounded-2xl text-slate-300 text-sm mt-3">
+                  click here
+                </button>
+              </Link>
             </div>
           </div>
         </div>
